@@ -64,7 +64,7 @@ using web4.Models;
             WriteLiteral("\r\n<h2>Check Bpx</h2>\r\n");
             EndContext();
             BeginContext(68, 144, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "70595a8205124ac0a5d5f82cc55c8232", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "297f364b91214e5ebdb237170b9ae5a4", async() => {
                 BeginContext(88, 117, true);
                 WriteLiteral("\r\n    Text\r\n    <input type=\"checkbox\" value=\"true\" name=\"isSelected\"/>\r\n    <input type=\"submit\" value=\"Submit\" />\r\n");
                 EndContext();

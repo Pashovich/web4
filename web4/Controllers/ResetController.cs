@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
+using web4.Models;
+using System.Security.Cryptography;
 namespace web4.Controllers
 {
     public class ResetController : Controller
@@ -11,43 +12,39 @@ namespace web4.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            ViewBag.Title = "Email";
-            ViewBag.Action = "Send";
-            ViewBag.Action2 = "toCheck";
-            ViewBag.ActionName = "I have a code";
-            ViewBag.display = true;
+            ViewBag.email = true;
             return View();
         }
-        [HttpPost]
-        public IActionResult Index(string data, string action, string action2)
+        private static Random random = new Random();
+        private string GetCode(int length)
         {
-            if(action == "Send")
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+              .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+        public IActionResult Email(ResetModel model, string submit)
+        {
+            if (submit == "send")
             {
-                //send code
-                ViewBag.display = true;
-                ViewBag.Title = "Email";
-                ViewBag.Action2 = "toCheck";
-                ViewBag.ActionName = "I have a code";
-                return View();
+                if (!ModelState.IsValid)
+                {
+                    return RedirectToAction("Index");
+                }
             }
-            if (action2 == "toCheck")
+            ViewBag.email = false;
+            CodeModel modelCodeTemp = new CodeModel();
+            modelCodeTemp.code = GetCode(5);
+            return View("Index", modelCodeTemp);
+        }
+        public IActionResult Verify(CodeModel model)
+        {
+            if (!TryValidateModel(model,nameof(model)))
             {
-                ViewBag.Title = "Code";
-                ViewBag.display = false;
-                ViewBag.Action2 = "Verify";
-                ViewBag.ActionName = "Verify";
+                ViewBag.email = false;
+                model.confirmCode = "";
+                return View("Index", model);
             }
-            if(action2 == "Verify")
-            {
-                //verify
-                ViewBag.display = true;
-                ViewBag.Title = "Email";
-                ViewBag.Action = "Send";
-                ViewBag.Action2 = "toCheck";
-                ViewBag.ActionName = "I have a code";
-                return View();// return to view with reset
-            }
-            return View();
+            return View("Reseted");
         }
     }
 }

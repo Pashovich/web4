@@ -64,7 +64,7 @@ using web4.Models;
             WriteLiteral("\r\n<h2>textArea</h2>\r\n");
             EndContext();
             BeginContext(67, 122, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5f46221fff9149f89a288b1a45c323e8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "89d37cdb1fab4dfda7ce6a39a8e1ea6d", async() => {
                 BeginContext(87, 95, true);
                 WriteLiteral("\r\n    Text\r\n    <textarea name=\"text\"></textarea>\r\n    <input type=\"submit\" value=\"Submit\" />\r\n");
                 EndContext();

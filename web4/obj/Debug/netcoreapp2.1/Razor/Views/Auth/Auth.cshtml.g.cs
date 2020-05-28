@@ -65,7 +65,7 @@ using web4.Models;
             WriteLiteral("<h2>Auth</h2>\r\n\r\n\r\n");
             EndContext();
             BeginContext(94, 280, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6cc1598fcbc4862938096c4e4a70be2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4356926fb5b4762aed598d75cf0fca5", async() => {
                 BeginContext(163, 10, true);
                 WriteLiteral("\r\n    <div");
                 EndContext();

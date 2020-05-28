@@ -46,3 +46,6 @@ C:\Users\USER\source\repos\web4\web4\obj\Debug\netcoreapp2.1\Razor\Views\Auth\Au
 C:\Users\USER\source\repos\web4\web4\obj\Debug\netcoreapp2.1\Razor\Views\Auth\_PrivateUserForm.cshtml.g.cs
 C:\Users\USER\source\repos\web4\web4\obj\Debug\netcoreapp2.1\Razor\Views\Auth\_UserForm.cshtml.g.cs
 C:\Users\USER\source\repos\web4\web4\obj\Debug\netcoreapp2.1\Razor\Views\Reset\Index.cshtml.g.cs
+C:\Users\USER\source\repos\web4\web4\obj\Debug\netcoreapp2.1\Razor\Views\Reset\_EmailForm.cshtml.g.cs
+C:\Users\USER\source\repos\web4\web4\obj\Debug\netcoreapp2.1\Razor\Views\Reset\_CodeForm.cshtml.g.cs
+C:\Users\USER\source\repos\web4\web4\obj\Debug\netcoreapp2.1\Razor\Views\Reset\Reseted.cshtml.g.cs

@@ -65,7 +65,7 @@ using web4.Models;
             WriteLiteral("\r\n<h2>DropDown</h2>\r\n");
             EndContext();
             BeginContext(67, 245, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9404e5061bc14a59bf3aac05eea440ed", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bcd2c3af22e745879673214805b5fb05", async() => {
                 BeginContext(87, 40, true);
                 WriteLiteral("\r\n    Text\r\n    <select name=\"months\">\r\n");
                 EndContext();
@@ -79,7 +79,7 @@ using web4.Models;
                 WriteLiteral("            ");
                 EndContext();
                 BeginContext(197, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2230d4308e3b419f9e33e548936c288f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d26e0e1093049e0930bff783cc5a097", async() => {
                     BeginContext(220, 4, false);
 #line 12 "C:\Users\USER\source\repos\web4\web4\Views\Controls\dropDown.cshtml"
                              Write(item);

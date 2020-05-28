@@ -64,7 +64,7 @@ using web4.Models;
             WriteLiteral("\r\n<h2>textBox</h2>\r\n");
             EndContext();
             BeginContext(65, 121, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3c33d2c4c01846149660ae59882b653c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e62b29fcc812426ea03bc38013844322", async() => {
                 BeginContext(85, 94, true);
                 WriteLiteral("\r\n    Text\r\n    <input type=\"text\" name=\"text\" />\r\n    <input type=\"submit\" value=\"Submit\"/>\r\n");
                 EndContext();

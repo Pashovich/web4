@@ -64,7 +64,7 @@ using web4.Models;
             WriteLiteral("\r\n<h2>Radio</h2>\r\n");
             EndContext();
             BeginContext(64, 313, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "53ad94a7fad94768b47a4185b57e3f75", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0571ebfaa7314fe4b727645a50ff612a", async() => {
                 BeginContext(84, 22, true);
                 WriteLiteral("\r\n    Text\r\n    <ul>\r\n");
                 EndContext();

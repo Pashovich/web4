@@ -65,7 +65,7 @@ using web4.Models;
             WriteLiteral("\r\n<h2>List Box</h2>\r\n");
             EndContext();
             BeginContext(67, 254, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "362884fbce6a4c148dc36fdd935b32ef", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0fbbc7f499ca4682b6f94ccfc507aeb5", async() => {
                 BeginContext(87, 49, true);
                 WriteLiteral("\r\n    Text\r\n    <select name=\"months\" multiple>\r\n");
                 EndContext();
@@ -79,7 +79,7 @@ using web4.Models;
                 WriteLiteral("            ");
                 EndContext();
                 BeginContext(206, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "505c948ffd3a46488f9a2c836e9d7a59", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77ccf2e236b54dcbb8b0f2f1de3cdff8", async() => {
                     BeginContext(229, 4, false);
 #line 12 "C:\Users\USER\source\repos\web4\web4\Views\Controls\listBox.cshtml"
                              Write(item);

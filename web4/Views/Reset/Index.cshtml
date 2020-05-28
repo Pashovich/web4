@@ -2,17 +2,12 @@
 
 <h2>Reset Your Password</h2>
 
-<div>
-    <form asp-antiforgery="true" asp-action="Index" asp-controller="Reset">
-        <h4>
-            @ViewBag.Title
-        </h4>
-        <input type="text" name="data" />
-        @if (ViewBag.display)
-        {
-            <button type="submit" name="action" value="Send">Send code</button>
-        }
-    <button type="submit" name="action2" value="@ViewBag.Action2">@ViewBag.ActionName</button>
-    </form>
-</div>
 
+@if (ViewBag.email)
+{
+    @Html.Partial("_EmailForm")
+}
+else
+{
+    @Html.Partial("_CodeForm")
+}

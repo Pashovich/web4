@@ -9,12 +9,12 @@
     </div>
     <div class="validation" >
         <label asp-for="PrivateUserInfoModel.password"></label>
-        <input type="text" asp-for="PrivateUserInfoModel.password" />
+        <input type="password" asp-for="PrivateUserInfoModel.password" />
         <span asp-validation-for="PrivateUserInfoModel.password"></span>
     </div>
     <div class="validation" >
         <label asp-for="PrivateUserInfoModel.confirmPassword"></label>
-        <input type="text" asp-for="PrivateUserInfoModel.confirmPassword" />
+        <input type="password" asp-for="PrivateUserInfoModel.confirmPassword" />
         <span asp-validation-for="PrivateUserInfoModel.confirmPassword"></span>
     </div>
     <input type="submit" value="Complete Sign Up" name="action" />
